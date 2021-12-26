@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>code</title>
+</head>
+<body>
+
+    <span class="d-inline-block" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="my content">
+        <button class="btn btn-primary" disabled>
+            my btn
+        </button>
+    </span>
+    <button class="btn btn-lg btn-danger" data-bs-toggle="popover" title="my title" data-bs-content="my content">
+        my popover
+    </button>
+    <br><br><br><br>
+    <button class="btn btn-secondary" data-bs-toggle="popover" data-bs-content="my content" data-bs-placement="top">
+        my popover on top
+    </button>
+
+</body>
+
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $('[data-bs-toggle="popover"]').popover();
+    })
+</script>
+
+</html>
